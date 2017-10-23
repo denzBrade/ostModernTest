@@ -1,0 +1,61 @@
+/* Some general styles */
+
+label {
+    font-weight: bold;
+}
+
+.container {
+    margin: 40px 0;
+}
+
+/* Searchbar Comp */
+.searchBar {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+/* List Items Comp */
+
+.container .list-group {
+    padding: 0;
+}
+
+.list-group .list {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* Media Display */
+.media-body {
+    position: relative;
+}
+
+.media-heading {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.media-description {
+    padding-bottom: 40px;
+}
+
+.media-producer p {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 480px) {
+    .list .media-left, 
+    .list .media-body,
+    .list .media-left img {
+        display: block;
+        width: 100%;
+    }
+
+    .list .media-left img {
+        margin-bottom: 20px;
+    }
+}
