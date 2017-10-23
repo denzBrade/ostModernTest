@@ -10,8 +10,8 @@ class SearchBar extends Component {
   render() {
     return (
       <div className="search-bar">
-        <label htmlFor="search">You searched for:{this.state.term}</label>
-        <input className="searchBar form-control" id="search" placeholder="Search here... (Fake search)"
+        <label htmlFor="search">Episode you searched for:{this.state.term}</label>
+        <input className="searchBar form-control" id="search" placeholder="Search episodes here... (Fake search)"
           value={this.state.term}
           onChange={event => this.onInputChange(event.target.value)}
         />
