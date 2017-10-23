@@ -2,10 +2,12 @@ import React from 'react';
 
 const SetListitem = ({home}) => {
 
+    // Get access to object properties
     const setTitle = home.title;
     const setDescription = home.summary;
     const setProducer = home.created_by;
 
+    // Our markup for the set list item
     return (
         <li className="list-group-item list">
           <div className="media-left">

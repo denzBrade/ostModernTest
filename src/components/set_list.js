@@ -10,6 +10,7 @@ class SetList extends Component {
 
     render() {
 
+        // Filter over Sets & return only the 'Home' set 
         const homeSet = this.props.sets.filter(( home => {
             return home.set_type_slug === 'home';
         }));
@@ -17,10 +18,12 @@ class SetList extends Component {
         // Check Home Set has been returned
         console.log(homeSet);
 
+        // Map over the returned set(s) under home & return our ListItem Component
         const home = homeSet.map(( home => {
             return <SetListItem  key={home.uid} home={home}/>
         }))
         
+        // Render our List to the DOM
         return (
             <ul className="col-md-12 list-group">
                 { home }
